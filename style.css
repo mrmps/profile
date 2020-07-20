@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap'); 
+html {
+  scroll-behavior: smooth;
+}
+div.first-page {
+    font-family: "Raleway";
+    font-size: 8pt;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+body {
+  background-image: url("https://i.ibb.co/SJfVjdt/thomas-heintz-0tg-Mn-MIYQ9-Y-unsplash.jpg");
+  background-size: cover;
+}
+div.second-page {
+    font-family: "Raleway";
+    font-size: 8pt;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+/*     background-image: url("https://i.ibb.co/SJfVjdt/thomas-heintz-0tg-Mn-MIYQ9-Y-unsplash.jpg");
+    background-size: cover */
+  }
+.my-element {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.my-title{
+  animation: bounce; /* referring directly to the     animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a 
+  duration! */
+  animation-delay: 1s;
+}
+
+.button { 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #000000;
+  font-family: "Raleway";
+  font-size: 8pt;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+.button1:hover{
+  background-color: #4CAF50; /* Green */
+  color: white;
+  animation: pulse;
+  animation-duration: 2s;
+  
+}
+
+
+
+/* .page-two{
+  height: 500px;
+} */
+.projects {
+  padding-top: 25px;
+}
+.project-discription {
+  padding-top: 30px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: inherit;
+  color: black;
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  animation: pulse;
+  animation-duration: 2s;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  display: none;
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+/* 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
